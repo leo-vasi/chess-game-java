@@ -20,11 +20,11 @@ public class App {
                 UI.clearScreen();
                 UI.printBoard(chessMatch.getPieces());
                 System.out.println();
-                System.out.println("Source: ");
+                System.out.print("Source: ");
                 ChessPosition source = UI.readChessPosition(sc);
                 System.out.println();
 
-                System.out.println("Target: ");
+                System.out.print("Target: ");
                 ChessPosition target = UI.readChessPosition(sc);
 
                 ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
